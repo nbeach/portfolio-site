@@ -15,23 +15,21 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: [
-//                    'bower_components/jquery/dist/jquery.js',
-//                    'bower_components/bootstrap/js/affix.js',
-//                    'bower_components/bootstrap/js/tooltip.js',
-//                    'bower_components/bootstrap/js/popover.js',
+                    'bower_components/jquery/dist/jquery.js',
+                    'bower_components/lightbox2/js/lightbox.js',
                     'src/**/*.js'
                 ],
-                dest: '<%= distFolder %><%= pkg.name %>.js'
+                dest: '<%= distFolder %>scripts/<%= pkg.name %>.js'
             }
         },
 
         uglify: {
             options: {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
-                sourceMap: '<%= distFolder %><%= pkg.name %>.map'
+                sourceMap: '<%= distFolder %>scripts/<%= pkg.name %>.map'
             },
             dist: {
-               files: {'<%= distFolder %><%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']}
+               files: {'<%= distFolder %>scripts/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']}
             }
         },
 
@@ -55,6 +53,7 @@ module.exports = function(grunt) {
             dist: {
                 files: [
                     {expand: true, cwd: 'bower_components/bootstrap/', src: ['fonts/**'], dest: '<%= distFolder %>'},
+                    {expand: true, cwd: 'bower_components/lightbox2/img/', src: ['*.*'], dest: '<%= distFolder %>/images'},
                     {expand: true, cwd: 'src/', src: ['images/**'], dest: '<%= distFolder %>'}
 
                 ]
@@ -68,9 +67,9 @@ module.exports = function(grunt) {
                     sourceMap: true,
                     outputSourceFiles: true,
                     sourceMapURL: '<%= pkg.name %>.css.map',
-                    sourceMapFilename: '<%= distFolder %><%= pkg.name %>.css.map'
+                    sourceMapFilename: '<%= distFolder %>styles/<%= pkg.name %>.css.map'
                 },
-                files: {  "<%= distFolder %><%= pkg.name %>.css": "src/styles/portfolio.less" }
+                files: {  "<%= distFolder %>styles/<%= pkg.name %>.css": "src/styles/portfolio.less" }
             }
         },
 
@@ -80,7 +79,7 @@ module.exports = function(grunt) {
                     keepSpecialComments: 0
                 },
                 files: {
-                    '<%= distFolder %><%= pkg.name %>.min.css': ['<%= distFolder %><%= pkg.name %>.css']
+                    '<%= distFolder %>styles/<%= pkg.name %>.min.css': ['<%= distFolder %>styles/<%= pkg.name %>.css']
                 }
             }
         },
