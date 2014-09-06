@@ -7,83 +7,122 @@
     <title>Nicholas Beach Portfolio</title>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href="styles/portfolio.min.css" rel="stylesheet">
-
   </head>
   <body>
-      <br>
-      <div class="container">
+
+      <div class="container main">
         <div class="row">
 
-          <!-- Personal info sidebar -->
+          <!-- Personal info -->
           <div class="col-sm-5 col-md-4 col-lg-3">
-              <div class="tile sidebar centered">
-
-                <br>
+              <div class="tile sidebar">
                 <img class="headshot" src="images/headshot.png" height="125" width="125">
                 <h2>Nicholas Beach</h2>
-                <h5>Full Stack Web Developer</h5>
-                <p> <!-- <span class="glyphicon glyphicon-globe"></span> --> Columbus, OH</p>
-
+                <h5>Full Stack Web Engineer</h5>
+                <p>Columbus, OH</p>
                 <br>
-
                 <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:nicholas.c.beach@gmail.com">nicholas.c.beach@gmail.com</a></p>
                 <p><span class="glyphicon glyphicon-file"></span> Resume <a href="files/nicholas-beach-resume.pdf">PDF</a> | <a href="files/nicholas-beach-resume.docx">Word</a> </p>
                 <p><span class="glyphicon glyphicon-phone"></span> (419) 348-9601</p>
                 <br>
                 <p><span class="glyphicon glyphicon-link"></span> <a href="http://www.github.com/nbeach" target="_blank">GitHub</a> | <a href="http://www.linkedin.com/in/nbeach" target="_blank">LinkedIn</a></p>
-                <br>
               </div>
           </div>
+          <!-- /Personal info -->
 
-          <!-- My works -->
+          <!-- My work -->
           <div class="col-sm-7 col-md-8 col-lg-9">
 
+            <!-- Scamper -->
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <div class="tile">
                     <h3>Scamper</h3>
                     <h5>Java, Spring, and AngularJS</h5>
-                    <p>Scamper is a spending reporting app I dreamt up after not being able to setup <a href="http://www.mint.com" target="_blank">Mint</a> to my liking. It's presently a work in progress. When v1.0 is finished it will import bank transaction
+                    <p>Scamper is a spending reporting app I came up with after not being able to setup <a href="http://www.mint.com" target="_blank">Mint</a> to my liking. It's presently a work in progress. When v1.0 is finished it will import bank transaction
                         CSV files and receipts and provide reporting on spending habits. The full source is available on <a href="http://github.com/nbeach" target="_blank">GitHub</a>.</p>
-                    <p>
-                        <a href="images/scamper-1.jpg" data-lightbox="scamper-images" data-title=""><img class="screenshot" src="images/scamper-1.jpg" height="62" width="100"></a>
-                        <a href="images/scamper-2.jpg" data-lightbox="scamper-images" data-title=""><img class="screenshot" src="images/scamper-2.jpg" height="62" width="100"></a>
-                    </p>
+
+                    <div class="screenshot">
+                        <a href="images/scamper-1.jpg" data-lightbox="scamper-images" data-title=""><img src="images/scamper-1.jpg" height="100" width="160"></a>
+                    </div>
+                    <div class="screenshot">
+                        <a href="images/scamper-2.jpg" data-lightbox="scamper-images" data-title=""><img src="images/scamper-2.jpg" height="100" width="160"></a>
+                    </div>
+                    <div class="clearfix"></div>
+
                     </div>
                 </div>
             </div>
+            <!-- /Scamper -->
 
+            <!-- ResourceTable -->
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-12">
                   <div class="tile">
                       <h3>ResourceTable</h3>
                       <h5>AngularJS Directive</h5>
                       <p>A Bootstrap 3 based AngularJS directive that allows easy display, pagination, sorting, and filtering of arbitrary collections of objects. See it in action on <a href="">jsBin</a> or view the full source on <a href="http://github.com/nbeach" target="_blank">GitHub</a>.</p>
-                      <p>
-                          <a href="images/scamper-2.jpg" data-lightbox="resource-table-images" data-title=""><img class="screenshot" src="images/scamper-2.jpg" height="62" width="100"></a>
-                      </p>
+
+                      <div class="screenshot">
+                          <a href="images/scamper-2.jpg" data-lightbox="resource-table-images" data-title=""><img src="images/scamper-2.jpg" height="100" width="160"></a>
+                      </div>
+                      <div class="clearfix"></div>
+
                   </div>
               </div>
             </div>
+            <!-- /ResourceTable -->
 
+            <!-- Administrative portal -->
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-12">
                   <div class="tile">
                       <h3>Administrative Portal</h3>
                       <h5>Bootstrap, jQuery, and PHP</h5>
-                      <p>The Bootstrap 2 images are from a production employee time sheet portal. The Bootstrap 3 images are mockups I made for a proposed AngularJS based administrative portal.</p>
-                      <p>
-                          <a href="images/scamper-1.jpg" data-lightbox="scamper-images" data-title=""><img class="screenshot" src="images/scamper-1.jpg" height="62" width="100"></a>
-                          <a href="images/scamper-2.jpg" data-lightbox="scamper-images" data-title=""><img class="screenshot" src="images/scamper-2.jpg" height="62" width="100"></a>
-                      </p>
+                      <p>Mockups for a proposed AngularJS and Bootstrap 3 based administrative portal.</p>
+
+                      <div class="screenshot">
+                          <a href="images/administrative-1.jpg" data-lightbox="timesheet-images" data-title="Employee Timesheet"><img src="images/administrative-1.jpg" height="100" width="160"></a>
+                      </div>
+                      <div class="screenshot">
+                          <a href="images/administrative-2.jpg" data-lightbox="timesheet-images" data-title="Employee Projects"><img src="images/administrative-2.jpg" height="100" width="160"></a>
+                      </div>
+                      <div class="clearfix"></div>
+
                   </div>
               </div>
             </div>
+            <!-- /Administrative portal -->
+
+            <!-- Employee Portal -->
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                  <div class="tile">
+                      <h3>Employee Portal</h3>
+                      <h5>Bootstrap, jQuery, and PHP</h5>
+                      <p>Employee portal application built in jQuery and Bootstrap 2.3 with a PHP backend. Fully responsive with layouts for mobile and tablet. The app has full support for for IE7 and up.</p>
+
+                      <div class="screenshot">
+                        <a href="images/timesheet-1.jpg" data-lightbox="employee-portal-images" data-title="Employee Timesheet (Desktop)"><img src="images/timesheet-1-thumb.jpg" height="100" width="160"></a>
+                      </div>
+                      <div class="screenshot">
+                        <a href="images/timesheet-2.jpg" data-lightbox="employee-portal-images" data-title="Employee Timesheet (Tablet)"><img src="images/timesheet-2-thumb.jpg" height="100" width="160"></a>
+                      </div>
+                      <div class="screenshot">
+                        <a href="images/timesheet-2.jpg" data-lightbox="employee-portal-images" data-title="Employee Timesheet (Mobile)"><img src="images/timesheet-3-thumb.jpg" height="100" width="56"></a>
+                      </div>
+                      <div class="clearfix"></div>
+
+                  </div>
+              </div>
+            </div>
+            <!-- /Employee Portal -->
 
           </div>
+         <!-- My work -->
+
         </div>
       </div>
-
       <script src="scripts/portfolio.min.js"></script>
   </body>
 </html>

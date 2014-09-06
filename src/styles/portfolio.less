@@ -1,59 +1,8 @@
 @import "dependencies.less";
-@import "mixins.less";
-
-@tile-bg: #ffffff;
-@body-bg: #f1f1f1;
-
-p,h1,h2,h3,h4,h5,h6,body { font-family: 'Lato', Helvetica, Arial, sans-serif; }
-body { background-color: @body-bg; }
-
-//Tiles
-.tile
-{
-  margin: 0px 0px 25px 0px;
-  padding: 5px 20px 10px 20px;
-  background: @tile-bg;
-  background-size: 50px 50px;
-  .box-shadow(0px 2px 0px, #c1c1c1);
-}
-
-.tile h3
-{
-  margin-top: 5px;
-}
-
-.sidebar
-{
-  padding-bottom: 20px;
-
-  //TODO: Make sidebar fixed
-  //  @media (min-width: 750px) {
-  //    position: fixed;
-  //  }
-}
-
-//Images
-.screenshot
-{
-  margin-right: 10px;
-}
-
-.headshot
-{
-  border-radius: 62.5px;
-  border-left:   5px solid #06567D;
-  border-top:    5px solid #06567D;
-  border-right:  5px solid #4D96B9;
-  border-bottom: 5px solid #4D96B9;
-}
-
-//General
-.centered
-{
-  text-align: center;
-}
-
-
+@import "variables.less";
+@import "core.less";
+@import "sidebar.less";
+@import "tile.less";
 
 
 

@@ -54,7 +54,8 @@ module.exports = function(grunt) {
                 files: [
                     {expand: true, cwd: 'bower_components/bootstrap/', src: ['fonts/**'], dest: '<%= distFolder %>'},
                     {expand: true, cwd: 'bower_components/lightbox2/img/', src: ['*.*'], dest: '<%= distFolder %>/images'},
-                    {expand: true, cwd: 'src/', src: ['images/**'], dest: '<%= distFolder %>'}
+                    {expand: true, cwd: 'src/', src: ['images/**'], dest: '<%= distFolder %>'},
+                    {expand: true, cwd: 'src/', src: ['files/**'], dest: '<%= distFolder %>'}
 
                 ]
             }

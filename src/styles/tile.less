@@ -1,0 +1,29 @@
+.tile
+{
+  margin: 0px 0px 25px 0px;
+  padding: 10px 25px 15px 25px;
+  background: @tile-color;
+  background-size: 50px 50px;
+  .box-shadow(0px 2px 0px, #c1c1c1);
+}
+
+.tile h3
+{
+  color: @theme-color-dark;
+  margin-top: 10px;
+}
+
+.tile .screenshot
+{
+  float: left;
+  text-align: center;
+  min-width: 160px;
+  border: 1px solid @body-color;
+  background-color: @body-color;
+  margin: 10px 10px 10px 0px;
+
+  @media (max-width: 749px) {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+  }
+}

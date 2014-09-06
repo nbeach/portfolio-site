@@ -1,12 +1,19 @@
 @import "../../bower_components/bootstrap/less/bootstrap.less";
-@import (less) "../../bower_components/lightbox2/css/lightbox.css";
+@import (inline) "../../bower_components/lightbox2/css/lightbox.css";
+@import "variables.less";
 
 //Correcting bootstrap fonts path for this project
-@icon-font-path: "../fonts/";
+@icon-font-path: @font-path;
 
-//Correcting lightbox2 image pathing
-body:after { content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png); }
-.lb-cancel { background: url(../images/loading.gif) no-repeat; }
-.lb-nav a.lb-prev { background: url(../images/prev.png) left 48% no-repeat; }
-.lb-nav a.lb-next { background: url(../images/next.png) right 48% no-repeat; }
-.lb-data .lb-close { background: url(../images/close.png) top right no-repeat; }
+//Overriding Bootstrap font stack
+@font-family-sans-serif:  @font-stack;
+
+//Correcting lightbox2 image pathing for this project
+body:after { content: url("@{image-path}close.png") url("@{image-path}loading.gif") url("@{image-path}prev.png") url("@{image-path}next.png"); }
+.lb-cancel { background: url("@{image-path}loading.gif") no-repeat; }
+.lb-nav a.lb-prev { background: url("@{image-path}prev.png") left 48% no-repeat; }
+.lb-nav a.lb-next { background: url("@{image-path}next.png") right 48% no-repeat; }
+.lb-data .lb-close { background: url("@{image-path}close.png") top right no-repeat; }
+
+//Removing image border from lightbox2
+.lb-outerContainer { background-color: none; }

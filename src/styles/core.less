@@ -1,0 +1,15 @@
+body
+{
+  background-color: @body-color;
+  margin-top: 20px; //Add come margin between content and top of the window
+}
+
+.centered
+{
+  text-align: center;
+}
+
+.box-shadow(@style, @c) when (iscolor(@c)) {
+  -webkit-box-shadow: @style @c;
+  box-shadow:         @style @c;
+}
