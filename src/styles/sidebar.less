@@ -1,18 +1,15 @@
 .sidebar
 {
   //Center sidebar on content on mobile
-  @media (max-width: 749px) {
-    text-align: center;
-  }
+  @media (max-width: @screen-xs-max) { text-align: center; }
 
   //On desktop the sidebar is fixed and doesn't scroll away
-  @media (min-width: 750px) { position: fixed; }
+  @media (min-width: @screen-sm)     { position: fixed; }
 
-  //We need to set a custom width for each Bootstrap device size as the fixed positioning causes an incorrect sizing
-  @media (min-width: 750px) { width: 282.5px; }      //Small Devices
-  @media (min-width: 970px) { width: 293.328125px; } //Medium Devices
-  @media (min-width: 1170px) { width: 262.5px; }     //Large Devices
-
+  //Setting a custom sidebar widths for each Bootstrap device size as the fixed positioning causes incorrect sizing
+  @media (min-width: @screen-sm)     { width: 282.5px; }
+  @media (min-width: @screen-md-min) { width: 293.328125px; }
+  @media (min-width: @screen-lg-min) { width: 262.5px; }
 }
 
 .headshot
