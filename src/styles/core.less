@@ -1,7 +1,10 @@
 body
 {
   background-color: @body-color;
-  margin-top: 20px; //Add come margin between content and top of the window
+  margin-top: 20px; //Add some margin between content and top of the window
+
+  //On desktop/tablet add a lot of margin to the bottom so the last tile can come up a bit when scrolling
+  @media (min-width: @screen-sm) { margin-bottom: 150px; }
 }
 
 .centered
@@ -25,4 +28,22 @@ body
 
   //Header should scroll away on mobile
   @media (max-width: @screen-xs-max) { position: absolute; }
+}
+
+.header-stripe-top
+{
+  height: 160px;
+  background-color: lighten(@theme-color-dark, 20%);
+}
+
+.header-stripe-middle
+{
+  height: 130px;
+  background-color: lighten(@theme-color-light, 20%);
+}
+
+.header-stripe-bottom
+{
+  height: 70px;
+  background-color: lighten(@theme-color-light, 30%);
 }
