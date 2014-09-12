@@ -2,11 +2,16 @@
 @font-path: "../fonts/";
 @image-path: '../images/';
 
-//Colors
-@theme-color-dark: #06567D;
-@theme-color-light: #4D96B9;
+//Primary theme colors
+@theme-color: #0b99de;
 @tile-color: #ffffff;
 @body-color: #f1f1f1;
+
+//Theme color variations
+@theme-color-light:   lighten(@theme-color, 10%);
+@theme-color-lighter: lighten(@theme-color, 40%);
+@theme-color-dark:     darken(@theme-color, 10%);
+@theme-color-darker:   darken(@theme-color, 20%);
 
 //Fonts
 @font-stack:  'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;

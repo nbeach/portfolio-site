@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nicholas Beach - Full Stack Web Developer</title>
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href="styles/portfolio.min.css" rel="stylesheet">
   </head>
   <body>
@@ -22,16 +21,28 @@
             <!-- Personal info column-->
             <div class="col-sm-5 col-md-4 col-lg-3">
               <div class="tile sidebar">
+                <!-- TODO: Need a better headshot photo -->
                 <img class="headshot" src="images/headshot.png" height="125" width="125">
                 <h2>Nicholas Beach</h2>
                 <h5>Full Stack Web Developer</h5>
                 <p>Columbus, OH</p>
                 <br>
-                <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:nicholas.c.beach@gmail.com">nicholas.c.beach@gmail.com</a></p>
-                <p><span class="glyphicon glyphicon-file"></span> Resume <a href="files/nicholas-beach-resume.pdf" target="_blank">PDF</a> | <a href="files/nicholas-beach-resume.docx" target="_blank">Word</a> </p>
+                <p>
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    <a href="mailto:nicholas.c.beach@gmail.com">nicholas.c.beach@gmail.com</a>
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-file"></span> Resume
+                    <a href="files/nicholas-beach-resume.pdf" target="_blank">PDF</a>
+                    | <a href="files/nicholas-beach-resume.docx" target="_blank">Word</a>
+                </p>
                 <p><span class="glyphicon glyphicon-phone"></span> (419) 348-9601</p>
                 <br>
-                <p><span class="glyphicon glyphicon-link"></span> <a href="http://www.github.com/nbeach" target="_blank">GitHub</a> | <a href="http://www.linkedin.com/in/nbeach" target="_blank">LinkedIn</a></p>
+                <p>
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="http://www.github.com/nbeach" target="_blank">GitHub</a>
+                    | <a href="http://www.linkedin.com/in/nbeach" target="_blank">LinkedIn</a>
+                </p>
               </div>
             </div>
             <!-- /Personal info column -->
@@ -54,6 +65,7 @@
                   <div class="col-sm-12 col-md-12 col-lg-12">
                       <div class="tile">
                           <h4>Personal Summary</h4>
+                          <!-- TODO: Need better summary text -->
                           <p>
                               Over 3 years experience in full stack web development. Thorough knowledge of HTML, CSS,
                               and JavaScript, and excellent UI/UX design skills. Passionate about thick client web
@@ -126,7 +138,8 @@
                           </p>
 
                           <div class="screenshot">
-                              <a href="images/screenshots/large/ng-resource-table-1.jpg" data-lightbox="resource-table-images" data-title="">
+                              <a href="images/screenshots/large/ng-resource-table-1.jpg"
+                                 data-lightbox="resource-table-images" data-title="">
                                   <img src="images/screenshots/small/ng-resource-table-1.jpg" height="100" width="160">
                               </a>
                           </div>
@@ -137,6 +150,44 @@
                 </div>
                 <!-- /ResourceTable -->
 
+                <!-- Employee Portal -->
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="tile">
+                            <h4>Employee Portal</h4>
+                            <h5>Bootstrap 2, jQuery, and PHP</h5>
+                            <p>
+                                Employee portal application built in jQuery and Bootstrap 2 with a PHP backend. Fully
+                                responsive with layouts for mobile and tablet. The app has full support for for IE7 and up.
+                            </p>
+
+                            <div class="screenshot">
+                                <a href="images/screenshots/large/timesheet-1.jpg"
+                                   data-lightbox="employee-portal-images" data-title="Employee Timesheet (Desktop)">
+                                    <img src="images/screenshots/small/timesheet-1.jpg" height="100" width="160">
+                                </a>
+                            </div>
+
+                            <div class="screenshot">
+                                <a href="images/screenshots/large/timesheet-2.jpg"
+                                   data-lightbox="employee-portal-images" data-title="Employee Timesheet (Tablet)">
+                                    <img src="images/screenshots/small/timesheet-2.jpg" height="100" width="157">
+                                </a>
+                            </div>
+
+                            <div class="screenshot">
+                                <a href="images/screenshots/large/timesheet-3.jpg"
+                                   data-lightbox="employee-portal-images" data-title="Employee Timesheet (Mobile)">
+                                    <img src="images/screenshots/small/timesheet-3.jpg" height="100" width="54">
+                                </a>
+                            </div>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /Employee Portal -->
+
                 <!-- Administrative portal -->
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-12">
@@ -146,12 +197,14 @@
                           <p>Mockups for a proposed AngularJS and Bootstrap 3 based administrative portal.</p>
 
                           <div class="screenshot">
-                              <a href="images/screenshots/large/administrative-1.jpg" data-lightbox="timesheet-images" data-title="Employee Timesheet">
+                              <a href="images/screenshots/large/administrative-1.jpg"
+                                 data-lightbox="timesheet-images" data-title="Employee Timesheet">
                                   <img src="images/screenshots/small/administrative-1.jpg" height="100" width="160">
                               </a>
                           </div>
                           <div class="screenshot">
-                              <a href="images/screenshots/large/administrative-2.jpg" data-lightbox="timesheet-images" data-title="Employee Projects">
+                              <a href="images/screenshots/large/administrative-2.jpg"
+                                 data-lightbox="timesheet-images" data-title="Employee Projects">
                                   <img src="images/screenshots/small/administrative-2.jpg" height="100" width="160">
                               </a>
                           </div>
@@ -161,39 +214,6 @@
                   </div>
                 </div>
                 <!-- /Administrative portal -->
-
-                <!-- Employee Portal -->
-                <div class="row">
-                  <div class="col-sm-12 col-md-12 col-lg-12">
-                      <div class="tile">
-                          <h4>Employee Portal</h4>
-                          <h5>Bootstrap, jQuery, and PHP</h5>
-                          <p>
-                              Employee portal application built in jQuery and Bootstrap 2.3 with a PHP backend. Fully
-                              responsive with layouts for mobile and tablet. The app has full support for for IE7 and up.
-                          </p>
-
-                          <div class="screenshot">
-                            <a href="images/screenshots/large/timesheet-1.jpg" data-lightbox="employee-portal-images" data-title="Employee Timesheet (Desktop)">
-                                <img src="images/screenshots/small/timesheet-1.jpg" height="100" width="160">
-                            </a>
-                          </div>
-                          <div class="screenshot">
-                            <a href="images/screenshots/large/timesheet-2.jpg" data-lightbox="employee-portal-images" data-title="Employee Timesheet (Tablet)">
-                                <img src="images/screenshots/small/timesheet-2.jpg" height="100" width="160">
-                            </a>
-                          </div>
-                          <div class="screenshot">
-                            <a href="images/screenshots/large/timesheet-3.jpg" data-lightbox="employee-portal-images" data-title="Employee Timesheet (Mobile)">
-                                <img src="images/screenshots/small/timesheet-3.jpg" height="100" width="56">
-                            </a>
-                          </div>
-                          <div class="clearfix"></div>
-
-                      </div>
-                  </div>
-                </div>
-                <!-- /Employee Portal -->
 
             </div>
             <!-- /Main content column -->
