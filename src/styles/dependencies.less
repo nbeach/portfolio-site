@@ -1,11 +1,23 @@
-@import "../../bower_components/bootstrap/less/bootstrap.less";
-@import (inline) "../../bower_components/lightbox2/css/lightbox.css";
+//Importing Bootstrap components used by this project
+@bootstrap-directory: "../../bower_components/bootstrap/less/";
+@import "@{bootstrap-directory}variables.less";
+@import "@{bootstrap-directory}mixins.less";
+@import "@{bootstrap-directory}normalize.less";
+@import "@{bootstrap-directory}glyphicons.less";
+@import "@{bootstrap-directory}scaffolding.less";
+@import "@{bootstrap-directory}type.less";
+@import "@{bootstrap-directory}grid.less";
+@import "@{bootstrap-directory}utilities.less";
 
 //Correcting bootstrap fonts path for this project
 @icon-font-path: @font-path;
 
 //Overriding Bootstrap font stack
 @font-family-sans-serif:  @font-stack;
+
+
+//Importing Lightbox2
+@import (inline) "../../bower_components/lightbox2/css/lightbox.css";
 
 //Correcting lightbox2 image pathing for this project
 body:after { content: url("@{image-path}close.png") url("@{image-path}loading.gif") url("@{image-path}prev.png") url("@{image-path}next.png"); }
