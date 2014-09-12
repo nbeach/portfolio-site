@@ -4,20 +4,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nicholas Beach Portfolio</title>
+    <title>Nicholas Beach - Full Stack Web Developer</title>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href="styles/portfolio.min.css" rel="stylesheet">
   </head>
   <body>
 
-      <!-- TODO: Add graphical header background -->
-      <div class="header-bg"></div>
+      <!-- Header background -->
+      <div class="header-bg header-stripe-top"></div>
+      <div class="header-bg header-stripe-middle"></div>
+      <div class="header-bg header-stripe-bottom"></div>
+      <!-- /Header background -->
 
       <div class="container main">
         <div class="row">
 
-          <!-- Personal info -->
-          <div class="col-sm-5 col-md-4 col-lg-3">
+            <!-- Personal info column-->
+            <div class="col-sm-5 col-md-4 col-lg-3">
               <div class="tile sidebar">
                 <img class="headshot" src="images/headshot.png" height="125" width="125">
                 <h2>Nicholas Beach</h2>
@@ -30,99 +33,170 @@
                 <br>
                 <p><span class="glyphicon glyphicon-link"></span> <a href="http://www.github.com/nbeach" target="_blank">GitHub</a> | <a href="http://www.linkedin.com/in/nbeach" target="_blank">LinkedIn</a></p>
               </div>
-          </div>
-          <!-- /Personal info -->
+            </div>
+            <!-- /Personal info column -->
 
-          <!-- My work -->
-          <div class="col-sm-7 col-md-8 col-lg-9">
+            <!-- Main content column -->
+            <div class="col-sm-7 col-md-8 col-lg-9">
 
-            <!-- Scamper -->
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="tile">
-                    <h3>Scamper</h3>
-                    <h5>Java, Spring, and AngularJS</h5>
-                    <p>Scamper is a spending reporting app I came up with after not being able to setup <a href="http://www.mint.com" target="_blank">Mint</a> to my liking. It's presently a work in progress. When v1.0 is finished it will import bank transaction
-                        CSV files and receipts and provide reporting on spending habits. View the <a href="http://github.com/nbeach/scamper-api" target="_blank">API</a> or <a href="http://github.com/nbeach/scamper-front-end" target="_blank">front end</a> source on GitHub.</p>
+                <!-- What I do header -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                      <div class="tile tile-transparent">
+                          <h2>What I do</h2>
+                      </div>
+                  </div>
+                </div>
+                <!-- /What I do header -->
 
-                    <div class="screenshot">
-                        <a href="images/screenshots/large/scamper-1.jpg" data-lightbox="scamper-images" data-title=""><img src="images/screenshots/small/scamper-1.jpg" height="100" width="160"></a>
-                    </div>
-                    <div class="screenshot">
-                        <a href="images/screenshots/large/scamper-2.jpg" data-lightbox="scamper-images" data-title=""><img src="images/screenshots/small/scamper-2.jpg" height="100" width="160"></a>
-                    </div>
-                    <div class="clearfix"></div>
+                <!-- What I do content -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                      <div class="tile">
+                          <h4>Personal Summary</h4>
+                          <p>
+                              Over 3 years experience in full stack web development. Thorough knowledge of HTML, CSS,
+                              and JavaScript, and excellent UI/UX design skills. Passionate about thick client web
+                              applications and restful backends. Good understanding of AngularJS. Experience with
+                              Adobe Creative Suite. Good knowledge of Java/Spring. Extensive experience with PHP.
+                              Skilled with SQL and database schema design and familiar with MySQL, SQL Server, and
+                              Oracle. Focus on end to end testing. Familiar with git and SVN version control.
+                              Experience with Linux server setup/configuration (Apache, Tomcat, MySQL, etc). Experience
+                              designing and executing load and performance tests on web applications.
+                          </p>
+                      </div>
+                  </div>
+                </div>
+                <!-- /What I do content -->
 
+                <!-- Things I've made header -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                      <div class="tile tile-transparent">
+                          <h2>Things I've made</h2>
+                      </div>
+                  </div>
+                </div>
+                <!-- /Things I've made header -->
+
+                <!-- Scamper -->
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="tile">
+                        <h4>Scamper</h4>
+                        <h5>Java, Spring, and AngularJS</h5>
+                        <p>
+                            Scamper is a spending reporting app I came up with after not being able to setup
+                            <a href="http://www.mint.com" target="_blank">Mint</a> to my liking. It's presently a work in
+                            progress. When v1.0 is finished it will import bank transaction
+                            CSV files and receipts and provide reporting on spending habits. View the
+                            <a href="http://github.com/nbeach/scamper-front-end" target="_blank">front end</a> or
+                            <a href="http://github.com/nbeach/scamper-api" target="_blank">API</a> source
+                            on GitHub.
+                        </p>
+
+                        <div class="screenshot">
+                            <a href="images/screenshots/large/scamper-1.jpg" data-lightbox="scamper-images" data-title="">
+                                <img src="images/screenshots/small/scamper-1.jpg" height="100" width="160">
+                            </a>
+                        </div>
+                        <div class="screenshot">
+                            <a href="images/screenshots/large/scamper-2.jpg" data-lightbox="scamper-images" data-title="">
+                                <img src="images/screenshots/small/scamper-2.jpg" height="100" width="160">
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- /Scamper -->
+                <!-- /Scamper -->
 
-            <!-- ResourceTable -->
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                  <div class="tile">
-                      <h3>ngResourceTable</h3>
-                      <h5>AngularJS Directive</h5>
-                      <p>A Bootstrap 3 based AngularJS directive that allows easy display, pagination, sorting, and filtering of arbitrary collections of objects. <a href="http://github.com/nbeach/ng-resource-table" target="_blank">View the source on GitHub.</a></p>
+                <!-- ResourceTable -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                      <div class="tile">
+                          <h4>ngResourceTable</h4>
+                          <h5>AngularJS Directive</h5>
+                          <p>
+                              A Bootstrap 3 based AngularJS directive that allows easy display, pagination, sorting, and
+                              filtering of arbitrary collections of objects.
+                              <a href="http://github.com/nbeach/ng-resource-table" target="_blank">View the source</a> on
+                              GitHub.
+                          </p>
 
-                      <div class="screenshot">
-                          <a href="images/screenshots/large/ng-resource-table-1.jpg" data-lightbox="resource-table-images" data-title=""><img src="images/screenshots/small/ng-resource-table-1.jpg" height="100" width="160"></a>
+                          <div class="screenshot">
+                              <a href="images/screenshots/large/ng-resource-table-1.jpg" data-lightbox="resource-table-images" data-title="">
+                                  <img src="images/screenshots/small/ng-resource-table-1.jpg" height="100" width="160">
+                              </a>
+                          </div>
+                          <div class="clearfix"></div>
+
                       </div>
-                      <div class="clearfix"></div>
-
                   </div>
-              </div>
-            </div>
-            <!-- /ResourceTable -->
+                </div>
+                <!-- /ResourceTable -->
 
-            <!-- Administrative portal -->
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                  <div class="tile">
-                      <h3>Administrative Portal</h3>
-                      <h5>Bootstrap 3 Mockups</h5>
-                      <p>Mockups for a proposed AngularJS and Bootstrap 3 based administrative portal.</p>
+                <!-- Administrative portal -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                      <div class="tile">
+                          <h4>Administrative Portal</h4>
+                          <h5>Bootstrap 3 Mockups</h5>
+                          <p>Mockups for a proposed AngularJS and Bootstrap 3 based administrative portal.</p>
 
-                      <div class="screenshot">
-                          <a href="images/screenshots/large/administrative-1.jpg" data-lightbox="timesheet-images" data-title="Employee Timesheet"><img src="images/screenshots/small/administrative-1.jpg" height="100" width="160"></a>
+                          <div class="screenshot">
+                              <a href="images/screenshots/large/administrative-1.jpg" data-lightbox="timesheet-images" data-title="Employee Timesheet">
+                                  <img src="images/screenshots/small/administrative-1.jpg" height="100" width="160">
+                              </a>
+                          </div>
+                          <div class="screenshot">
+                              <a href="images/screenshots/large/administrative-2.jpg" data-lightbox="timesheet-images" data-title="Employee Projects">
+                                  <img src="images/screenshots/small/administrative-2.jpg" height="100" width="160">
+                              </a>
+                          </div>
+                          <div class="clearfix"></div>
+
                       </div>
-                      <div class="screenshot">
-                          <a href="images/screenshots/large/administrative-2.jpg" data-lightbox="timesheet-images" data-title="Employee Projects"><img src="images/screenshots/small/administrative-2.jpg" height="100" width="160"></a>
-                      </div>
-                      <div class="clearfix"></div>
-
                   </div>
-              </div>
-            </div>
-            <!-- /Administrative portal -->
+                </div>
+                <!-- /Administrative portal -->
 
-            <!-- Employee Portal -->
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                  <div class="tile">
-                      <h3>Employee Portal</h3>
-                      <h5>Bootstrap, jQuery, and PHP</h5>
-                      <p>Employee portal application built in jQuery and Bootstrap 2.3 with a PHP backend. Fully responsive with layouts for mobile and tablet. The app has full support for for IE7 and up.</p>
+                <!-- Employee Portal -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                      <div class="tile">
+                          <h4>Employee Portal</h4>
+                          <h5>Bootstrap, jQuery, and PHP</h5>
+                          <p>
+                              Employee portal application built in jQuery and Bootstrap 2.3 with a PHP backend. Fully
+                              responsive with layouts for mobile and tablet. The app has full support for for IE7 and up.
+                          </p>
 
-                      <div class="screenshot">
-                        <a href="images/screenshots/large/timesheet-1.jpg" data-lightbox="employee-portal-images" data-title="Employee Timesheet (Desktop)"><img src="images/screenshots/small/timesheet-1.jpg" height="100" width="160"></a>
-                      </div>
-                      <div class="screenshot">
-                        <a href="images/screenshots/large/timesheet-2.jpg" data-lightbox="employee-portal-images" data-title="Employee Timesheet (Tablet)"><img src="images/screenshots/small/timesheet-2.jpg" height="100" width="160"></a>
-                      </div>
-                      <div class="screenshot">
-                        <a href="images/screenshots/large/timesheet-3.jpg" data-lightbox="employee-portal-images" data-title="Employee Timesheet (Mobile)"><img src="images/screenshots/small/timesheet-3.jpg" height="100" width="56"></a>
-                      </div>
-                      <div class="clearfix"></div>
+                          <div class="screenshot">
+                            <a href="images/screenshots/large/timesheet-1.jpg" data-lightbox="employee-portal-images" data-title="Employee Timesheet (Desktop)">
+                                <img src="images/screenshots/small/timesheet-1.jpg" height="100" width="160">
+                            </a>
+                          </div>
+                          <div class="screenshot">
+                            <a href="images/screenshots/large/timesheet-2.jpg" data-lightbox="employee-portal-images" data-title="Employee Timesheet (Tablet)">
+                                <img src="images/screenshots/small/timesheet-2.jpg" height="100" width="160">
+                            </a>
+                          </div>
+                          <div class="screenshot">
+                            <a href="images/screenshots/large/timesheet-3.jpg" data-lightbox="employee-portal-images" data-title="Employee Timesheet (Mobile)">
+                                <img src="images/screenshots/small/timesheet-3.jpg" height="100" width="56">
+                            </a>
+                          </div>
+                          <div class="clearfix"></div>
 
+                      </div>
                   </div>
-              </div>
-            </div>
-            <!-- /Employee Portal -->
+                </div>
+                <!-- /Employee Portal -->
 
-          </div>
-         <!-- My work -->
+            </div>
+            <!-- /Main content column -->
 
         </div>
       </div>
