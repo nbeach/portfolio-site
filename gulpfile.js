@@ -12,9 +12,7 @@ var cssmin = require('gulp-cssmin');
 var htmlmin = require('gulp-htmlmin');
 
 
-//Clean task
-
-
+//Clean
 gulp.task('clean', function() {
     return gulp.src('dist/*', {read: false})
         .pipe(clean());
@@ -39,6 +37,7 @@ gulp.task('less', function() {
         .pipe(gulp.dest('dist/styles'));
 });
 
+
 //JS
 gulp.task('js', function() {
     return gulp.src(['bower_components/jquery/dist/jquery.js',
@@ -58,6 +57,7 @@ gulp.task('images', function() {
                     'bower_components/lightbox2/img/*.*'])
         .pipe(gulp.dest('dist/images'));
 });
+
 
 //Fonts
 gulp.task('fonts', function() {
