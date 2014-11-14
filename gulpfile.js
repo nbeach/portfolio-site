@@ -1,7 +1,7 @@
 var gulp = require('gulp'); 
 
 //Plugins
-var clean = require('gulp-clean');
+var del = require('del');
 var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 
@@ -10,12 +10,12 @@ var less = require('gulp-less');
 var uglify = require('gulp-uglify');
 var cssmin = require('gulp-cssmin');
 var htmlmin = require('gulp-htmlmin');
+var sourcemaps = require('gulp-sourcemaps');
 
 
 //Clean
 gulp.task('clean', function() {
-    return gulp.src('dist/*', {read: false})
-        .pipe(clean());
+    del('dist/*');
 });
 
 
@@ -29,11 +29,13 @@ gulp.task('html', function() {
 
 //LESS
 gulp.task('less', function() {
-    return gulp.src('src/styles/portfolio.less')
+    return gulp.src('src/styles/portfolio.less') 
         .pipe(less())
         .pipe(gulp.dest('dist/styles'))
         .pipe(rename('portfolio.min.css'))
+        .pipe(sourcemaps.init())
         .pipe(cssmin())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/styles'));
 });
 
@@ -43,10 +45,12 @@ gulp.task('js', function() {
     return gulp.src(['bower_components/jquery/dist/jquery.js',
                     'bower_components/lightbox2/js/lightbox.js',
                     'src/scripts/**/*.js'])
+        .pipe(sourcemaps.init())
         .pipe(concat('portfolio.js'))
         .pipe(gulp.dest('dist/scripts'))
         .pipe(rename('portfolio.min.js'))
         .pipe(uglify())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/scripts'));
 });
 
