@@ -1,5 +1,5 @@
 //Importing Bootstrap components used by this project
-@bootstrap-directory: "../../bower_components/bootstrap/less/";
+@bootstrap-directory: "../../node_modules/bootstrap/less/";
 @import "@{bootstrap-directory}variables.less";
 @import "@{bootstrap-directory}mixins.less";
 @import "@{bootstrap-directory}normalize.less";
@@ -17,7 +17,7 @@
 
 
 //Importing Lightbox2
-@import (inline) "../../bower_components/lightbox2/css/lightbox.css";
+@import (inline) "../../node_modules/lightbox2/dist/css/lightbox.css";
 
 //Correcting lightbox2 image pathing for this project
 body:after { content: url("@{image-path}close.png") url("@{image-path}loading.gif") url("@{image-path}prev.png") url("@{image-path}next.png"); }

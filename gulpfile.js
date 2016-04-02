@@ -42,8 +42,8 @@ gulp.task('less', function() {
 
 //JS
 gulp.task('js', function() {
-    return gulp.src(['bower_components/jquery/dist/jquery.js',
-                    'bower_components/lightbox2/js/lightbox.js',
+    return gulp.src(['node_modules/jquery/dist/jquery.js',
+                    'node_modules/lightbox2/dist/js/lightbox.js',
                     'src/scripts/**/*.js'])
         .pipe(sourcemaps.init())
         .pipe(concat('portfolio.js'))
@@ -58,7 +58,7 @@ gulp.task('js', function() {
 //Images
 gulp.task('images', function() {
     return gulp.src(['src/images/**/*',
-                    'bower_components/lightbox2/img/*.*'])
+                    'node_modules/lightbox2/dist/images/**/*'])
         .pipe(gulp.dest('dist/images'));
 });
 
@@ -66,7 +66,7 @@ gulp.task('images', function() {
 //Fonts
 gulp.task('fonts', function() {
     return gulp.src(['src/fonts/**/*',
-                    'bower_components/bootstrap/fonts/**/*'])
+                    'node_modules/bootstrap/dist/fonts/**/*'])
         .pipe(gulp.dest('dist/fonts'));
 });
 
