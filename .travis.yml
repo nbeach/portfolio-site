@@ -9,4 +9,4 @@ before_script:
 - npm install -g gulp
 script: gulp
 after_success:
-- rsync --delete -av dist rsync://$DEPLOY_USER@nicholasbeach.com/html
+- rsync --delete --omit-dir-times -av dist/ rsync://$DEPLOY_USER@nicholasbeach.com/html
