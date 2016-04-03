@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "test": "echo 'no tests exist for this project'"
+    "clean": "gulp clean"
   },
   "devDependencies": {
     "del": "^2.2.0",
