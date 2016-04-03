@@ -5,5 +5,3 @@
 })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 ga('create', 'UA-33174104-1', 'auto');
 ga('send', 'pageview');
-
-}}
