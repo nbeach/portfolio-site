@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "build": "gulp",
+    "watch": "gulp watch",
     "test": "echo 'No tests exist for this project'",
     "clean": "gulp clean"
   },
